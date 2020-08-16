@@ -111,6 +111,7 @@ class SigProcessor:
                         sig_list.append((_ptweet.datetime(), 0, 0, v, sig, token))
 
         if max_sig > _SIGNI_THRESHOLD:
+            # print("max_sig: %s" % max_sig)
             return max_sig_instance, sig_list
 
         return None, None

@@ -52,6 +52,13 @@ class RawTweetItem:
         return datetime.datetime.utcfromtimestamp(self.timestamp)
 
 
+class RawReviewItem:
+    def __init__(self, _vt, _str):
+        self.str = _str
+        self.timestamp = _vt
+        self.uid = 1000001
+
+
 class PreprocessedTweetItem:
 
     def __init__(self, _t, _uid, _tokens):
